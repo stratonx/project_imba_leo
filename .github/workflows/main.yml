@@ -32,7 +32,7 @@ jobs:
 
       - name: Deploy S3 Buckets CloudFormation Stacks
         id: s3-buckets
-        uses: aws-actions/aws-cloudformation-github-deploy@v1.0.3
+        uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
           name:  s3-buckets
           template: cfn/s3.yml
