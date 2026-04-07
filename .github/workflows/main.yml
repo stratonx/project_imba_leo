@@ -40,6 +40,7 @@ jobs:
             BucketName=${{ github.event.inputs.bucketName }}
 
   upload-to-s3:
+    needs: cfn-deployment
     runs-on: ubuntu-latest
 
     steps:
